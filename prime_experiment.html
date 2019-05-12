@@ -32,8 +32,8 @@ line-height:140%;
 </style>
 <h1>Machine, Learning</h1>
 <h2>An experiment by Jane Adams (<a href="https://twitter.com/artistjaneadams">&#128038;</a>)</h2>
-<p>Computers can compute an equation, but they don't understand the math itself. Can machine learning teach computers to <i>understand</i> math?</p>
-<p>We build a data set that comprises of all primes under 2,000 multiplied by one another, and a random selection of non-prime multiples matching the prime data set size. Using 20% training data and 80% testing data, we ask a <a href="https://scikit-learn.org/stable/modules/tree.html#classification">decision tree</a> whether a given set of numbers {a,b,c} is a multiplication of primes, where a*b=c. The model returns 98.3% accuracy.</p>
+<p>Computers don't understand math, they just compute solutions. But can machine learning allow computers to <i>understand</i> math?</p>
+<p>We build a data set that comprises of all primes under 2,000 multiplied by one another to generate a list of subprimes (RSA numbers). We also generate a random selection of composite numbers, the same size as the semiprime set. We merge both into a single data set, with a binary classifier for semiprime or composite class. Using 20% training data and 80% testing data, we ask a <a href="https://scikit-learn.org/stable/modules/tree.html#classification">decision tree</a> whether a given set of numbers {a,b,c} is a multiplication of primes, where a*b=c. The model returns 98.3% accuracy.</p>
 <p>Click and drag to rotate 3D graphs.</p>
 <p><a href="https://nbviewer.jupyter.org/github/janeadams/machinelearning/blob/master/dtree_primefactors.ipynb">Check out the Jupyter Notebook here.</a></p>
 <iframe src="http://dev.universalities.com/machinelearning/master.html"></iframe>
